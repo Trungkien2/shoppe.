@@ -1,0 +1,133 @@
+:root{
+    --white-color : #fff;
+    --black-color : #000;
+    --front--color : #ccc;
+}
+
+*{  
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+
+}
+p{
+   font-size: 1.6rem;
+}
+
+
+.gird__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    
+}
+.gird__collum-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+.grid__collum-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+.grid_collum-10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3333%;
+}
+.separate{
+    padding: 0px 7px;
+    border-right: 2px solid hsla(0,0%,100%,.22); 
+}
+@keyframes noficateanimetion {
+    from{
+      opacity: 0;
+      transform: scale(0);
+    }
+    to{
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    animation:noficateanimetion linear 0.1s ;
+
+}
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.modal__body{
+    background-color: var(--white-color);
+    margin: auto;
+    z-index: 1;
+}
+/*BUTTON*/
+.btn{
+    width: 142px;
+    height: 34px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: white;
+}
+.btn-size-s{
+ font-size: 12px;
+ padding: 0px 8px;
+ width: 50%;
+}
+.btn .btn-nomarl:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.btn.btn-primary{
+    color: var(--white-color);
+    background-color: orangered;
+}
+
+/* pagination */
+.pagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagiantion__items{
+    list-style: none;
+    margin: 0px 10px;
+}
+.pagination__items-links{
+display: block;
+text-decoration: none;
+font-weight: 300;
+font-size: 20px;
+color: #030303;
+min-width: 40px;
+height: 30px;
+text-align: center;
+line-height: 30px;
+border-radius: 2px;
+}
+.pagination__items-active{
+    background-color: orangered;
+    color: white;
+}
+

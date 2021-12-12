@@ -1,0 +1,30 @@
+/* mobile  & tablet  */
+ @media (max-width:1023px){
+     .header{
+        height: 68px;
+     }
+    .header-search{
+        height: 68px;
+        padding: 0;
+        align-items: center;
+    }
+    .hide-on-mb-tb{
+        display: none;
+    }
+    .input-search{
+        width: 70%;
+        padding-left: 55px;
+    }
+ }
+/* table */
+ @media  (min-width:740px) and(max-width:1023px){
+    .hide-on-tb{
+        display: none;
+    }
+}
+/* mobile */
+@media (max-width : 739px){
+    .hide-on-mb{
+        display: none;
+    }
+}
